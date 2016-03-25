@@ -17,6 +17,10 @@
     "webpack": "^1.12.14"
   },
   "devDependencies": {
-    "babel-preset-es2015": "^6.5.0"
+    "babel-eslint": "^5.0.0",
+    "babel-preset-es2015": "^6.5.0",
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.2.0",
+    "eslint-plugin-react": "^4.2.3"
   }
 }
