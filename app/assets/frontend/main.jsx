@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Index from './components/Index';
 import Follow from './components/Follow'
 
-import { Router, Route, Link, browserHistory } from 'react-router';
+import { Router, Route, Link, hashHistory } from 'react-router';
 
 class App extends React.Component {
   render(){
@@ -19,7 +19,7 @@ let documentReady = () => {
   let reactNode = document.getElementById('react')
   if(!!reactNode){
     ReactDOM.render(
-      <Router history={browserHistory}>
+      <Router history={hashHistory}>
         <Route component={App}>
           <Route path='/' component={Index} />
           <Route path='/follow' component={Follow} />
